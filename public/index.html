@@ -26,51 +26,16 @@
 <body>
   <nav class="nav-bar">
     <div class="grid">
+      <div class="item"><a class="nav-link" href="#">Logo / Home</a></div>
       <div class="item"><a class="nav-link" href="#">Action</a></div>
       <div class="item"><a class="nav-link" href="#">Action</a></div>
       <div class="item"><a class="nav-link" href="#">Action</a></div>
-      <div class="item"><a class="nav-link" href="#">Action</a></div>
-      <div class="item"><a class="nav-link" href="#">Action</a></div>
+      <div class="item"><a class="nav-link" href="#"></a></div>
+      <div class="item"><a class="nav-link" href="#">Search Bar</a></div>
     </div>
   </nav>
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-messaging.js"></script>
-  
-
-<script>
-  var firebaseConfig = {
-    apiKey: "AIzaSyA4XIEP8uNWGBMLs089Dfeac8WzdAQdous",
-    authDomain: "complete-navbar-using-gr-9ccc8.firebaseapp.com",
-    databaseURL: "https://complete-navbar-using-gr-9ccc8-default-rtdb.firebaseio.com",
-    projectId: "complete-navbar-using-gr-9ccc8",
-    storageBucket: "complete-navbar-using-gr-9ccc8.appspot.com",
-    messagingSenderId: "669573364396",
-    appId: "1:669573364396:web:0920aa62e9f5d25c273d09",
-    measurementId: "G-91F631BS1Z"
-  };
-  firebase.initializeApp(firebaseConfig);
-
-const messaging = firebase.messaging();
-messaging.requestPermission()
-    .then(function () {
-        console.log('Have permission');
-        return messaging.getToken();
-    })
-    .then(function(token){
-      console.log(token);
-      
-    })
-    .catch(function (err) {
-        console.log('Error Occurred');
-    })
-
-    messaging.onMessage(function(payload)
-    {
-      console.log('onMessage', payload);
-    })
-    
-</script>
 </body>
 
 </html>
