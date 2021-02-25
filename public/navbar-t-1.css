@@ -6,9 +6,6 @@
     display: block;
     position: sticky;
     top: 0px;
-
-    padding-bottom: 10px;
-
 }
 
 .grid {
@@ -17,7 +14,7 @@
     column-gap: 0px;
     text-align: center;
     border-radius: 15px;
-    box-shadow: 0px 6px #999090;
+    box-shadow: 0px 5px #999090;
 
 }
 
@@ -32,20 +29,31 @@ div.item {
 .item a {
     text-decoration: none;
     color: black;
-    font-size: 28px;
+    font-size: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    line-height: 1.25cm;
+    line-height: 50px;
     align-items: center;
     color: ivory;
+    background-color: #0766eb;
+    padding: 8px 0px;
 }
 
 .item:hover {
     background-color: cadetblue;
 
 }
-
-
-
+.br1{
+    border-radius: 0px 0px 0px 15px;
+}
+.br2{
+    border-radius: 0px 0px 15px 0px;
+}
+.lorem1{
+    font-size: 35px;
+}
+.lorem2{
+    font-size: 30px;
+}
 
 @media screen and (max-width: 600px) {
     .nav-bar {
@@ -67,5 +75,22 @@ div.item {
         float: left;
         margin-left: 1cm;
         color: ivory;
+        background-color: transparent;
+    }
+    .hidden{
+        display: none;
+    }
+    .br1{
+        border-radius: 0px;
+    }
+    .br2{
+        border-radius: 0px;
+        float: right;
+    }
+    .lorem1{
+        font-size: 20px;
+    }
+    .lorem2{
+        font-size: 15px;
     }
 }
